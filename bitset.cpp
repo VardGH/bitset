@@ -18,7 +18,15 @@ void Bitset::reset(const unsigned int n)
 {
     int id = n / 64;
     int pos = n % 64;
-    m_vec[id] ^= (1 << pos);
+    m_vec[id] &= ~(1 << pos);
+}
+
+
+void Bitset::flip(const unsigned int n)
+{
+    int id = n / 64;
+    int pos = n % 64;
+    m_vec[id] ^= 1 << pos;
 }
 
 void Bitset::print()

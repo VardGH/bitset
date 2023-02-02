@@ -28,5 +28,10 @@ int main()
      std::cout << "Reset\n";
      b.print();
 
+     b.flip(0);
+     b.flip(4);
+     std::cout << "Flip\n";
+     b.print();
+
      return 0;
 }

@@ -9,6 +9,7 @@ public:
 public:
     void set(const unsigned int);
     void reset(const unsigned int);
+    void flip(const unsigned int);
     void print();
 
 private:
