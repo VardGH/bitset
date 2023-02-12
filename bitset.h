@@ -11,9 +11,10 @@ public:
     void reset(const unsigned int);
     void flip(const unsigned int);
     void print();
+    void print_binary();
 
 private:
     unsigned short m_size;
-    std::vector<long long> m_vec;
+    std::vector<unsigned int> m_vec;
 };
 
