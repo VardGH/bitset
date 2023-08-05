@@ -2,7 +2,7 @@
 
 Bitset::Bitset(const unsigned int count)
 {
-    m_size = count / 32 + (count % 32 != 0);  // Calculation for m_size.
+    m_size = count / 32 + 1;  // Calculation for m_size.
     m_vec.assign(m_size, 0);  // Initialize the vector with zeros.
 }
 
