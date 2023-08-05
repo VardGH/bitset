@@ -7,7 +7,7 @@
 class Bitset
 {
 public:
-    Bitset(const unsigned int);
+    explicit Bitset(const unsigned int);
     Bitset(const Bitset& other);
     Bitset(Bitset&& other) noexcept;
     Bitset& operator=(const Bitset& other);
